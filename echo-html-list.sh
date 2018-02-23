@@ -15,7 +15,7 @@ sha256sum *.* | while read -r line; do
   name="${name//-/ }"
 
   if [ "${name}" = "${previous_name}" ]; then
-    echo "  <li><a href=\"${sha}\">${file}</a></li>"
+    echo "  <li><a href=\"shells/${sha}\">${file}</a></li>"
   else
     if [ -n "${previous_name}" ]; then
       echo "</ul>"
