@@ -1,7 +1,8 @@
 pages:
   stage: deploy
   script:
-    - bundle exec jekyll build -d public
+      - mkdir public
+      - cp -r index.html images javascripts shells params.json stylesheets public
   artifacts:
     paths:
       - public
