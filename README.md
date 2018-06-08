@@ -1,3 +1,3 @@
-# shenv.github.io
+# shenv.git(hub|lab).io
+Mirror for shell archives.
 
-hi there
