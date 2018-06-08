@@ -1,8 +1,9 @@
 pages:
+  image: alpine:latest
   stage: deploy
   script:
-      - mkdir public
-      - cp -r index.html images javascripts shells params.json stylesheets public
+    - mkdir public
+    - cp -rv index.html images shells stylesheets public/
   artifacts:
     paths:
       - public
